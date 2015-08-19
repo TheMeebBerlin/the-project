@@ -5,6 +5,7 @@
 
 (defroutes app-routes
   (GET "/" [] "Hello World")
+  (GET "/groups/:group-id/word/:word-id" [] "hello")
   (route/not-found "Not Found"))
 
 (def app
