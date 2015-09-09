@@ -8,5 +8,6 @@
   (GET "/groups/:group-id/word/:word-id" [] "hello")
   (route/not-found "Not Found"))
 
+(defn get-words [] (slurp "/resources/words.txt"))
 (def app
   (wrap-defaults app-routes site-defaults))
